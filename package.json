@@ -1,0 +1,45 @@
+{
+  "name": "sc2clientprotocol",
+  "version": "0.0.0",
+  "description": "An NPM/Javascript implementation of the python sc2clientprotocol package.",
+  "main": "dist/sc2clientprotocol.umd.js",
+  "module": "dist/sc2clientprotocol.esm.js",
+  "unpkg": "dist/sc2clientprotocol.min.js",
+  "browser": {
+    "./sfc": "src/sc2clientprotocol.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/sc2clientprotocol.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/sc2clientprotocol.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/sc2clientprotocol.min.js",
+    "build-proto": "protoc --proto_path=. --js_out=import_style=commonjs,binary:build/gen s2clientprotocol/*.proto",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arcman7/sc2clientprotocol.git"
+  },
+  "keywords": [
+    "pysc2",
+    "protobuf",
+    "sc2clientprotocol",
+    "s2client-proto",
+    "npm s2client-proto",
+    "npm sc2clientprotocol"
+  ],
+  "author": "Andrew R Carpenter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arcman7/sc2clientprotocol/issues"
+  },
+  "homepage": "https://github.com/arcman7/sc2clientprotocol#readme",
+  "devDependencies": {
+    "rollup": "^2.7.5",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-commonjs": "^10.1.0"
+  }
+}
