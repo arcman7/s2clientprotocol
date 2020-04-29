@@ -1,7 +1,17 @@
 # sc2clientprotocol
-A Javascript implementation of the python sc2clientprotocol package.
+NPM/Javascript implementation of the python sc2clientprotocol package.
 
 For more information see [this repository](https://github.com/Blizzard/s2client-proto)'s [documentation](https://github.com/Blizzard/s2client-proto/blob/master/docs/protocol.md)
 
-This repository serves as the source code and homepage of the sc2clientprotocol npm package. This project builds upon the results of the 
-[s2proto-js](https://github.com/jmcmahon443/s2proto-js) project to generate the underlying sc2 api.
+This repository serves as the source code and homepage of the sc2clientprotocol npm package used in the deepmind/pysc2 project.
+
+## Installation
+
+`npm install sc2clientprotocol`
+
+## Building from source
+
+1. Install the protoc compiler [easier done on a mac](http://google.github.io/proto-lens/installing-protoc.html)
+2. run the command:
+  `npm run build-proto`
+  - the generated files will be located in the build/gen directory
