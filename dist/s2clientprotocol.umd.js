@@ -1,5 +1,8 @@
-var sc2clientprotocol = (function (exports) {
-    'use strict';
+(function (global, factory) {
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+    typeof define === 'function' && define.amd ? define(['exports'], factory) :
+    (global = global || self, factory(global.s2clientprotocol = {}));
+}(this, (function (exports) { 'use strict';
 
     var common_pb = require('../s2clientprotocol/common_pb.js');
     var data_pb = require('../s2clientprotocol/data_pb.js');
@@ -29,6 +32,6 @@ var sc2clientprotocol = (function (exports) {
 
     exports.default = sc2clientprotocol;
 
-    return exports;
+    Object.defineProperty(exports, '__esModule', { value: true });
 
-}({}));
+})));

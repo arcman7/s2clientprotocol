@@ -3,7 +3,7 @@ import commonjs from 'rollup-plugin-commonjs'; // Convert CommonJS modules to ES
 export default {
     input: 'src/index.js', // Path relative to package.json
     output: {
-        name: 'sc2clientprotocol',
+        name: 's2clientprotocol',
         exports: 'named',
         format: 'cjs'
     },
