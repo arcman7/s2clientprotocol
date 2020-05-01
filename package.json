@@ -1,6 +1,6 @@
 {
   "name": "s2clientprotocol",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An NPM/Javascript implementation of the python s2clientprotocol package.",
   "main": "dist/s2clientprotocol.umd.js",
   "module": "dist/s2clientprotocol.esm.js",
