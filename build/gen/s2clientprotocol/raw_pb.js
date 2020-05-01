@@ -11,7 +11,7 @@ var jspb = require('google-protobuf');
 var goog = jspb;
 var global = Function('return this')();
 
-var s2clientprotocol_common_pb = require('../s2clientprotocol/common_pb.js');
+var s2clientprotocol_common_pb = require('./common_pb.js');
 goog.exportSymbol('proto.SC2APIProtocol.ActionRaw', null, global);
 goog.exportSymbol('proto.SC2APIProtocol.ActionRawCameraMove', null, global);
 goog.exportSymbol('proto.SC2APIProtocol.ActionRawToggleAutocast', null, global);

@@ -11,8 +11,8 @@ var jspb = require('google-protobuf');
 var goog = jspb;
 var global = Function('return this')();
 
-var s2clientprotocol_common_pb = require('../s2clientprotocol/common_pb.js');
-var s2clientprotocol_error_pb = require('../s2clientprotocol/error_pb.js');
+var s2clientprotocol_common_pb = require('./common_pb.js');
+var s2clientprotocol_error_pb = require('./error_pb.js');
 goog.exportSymbol('proto.SC2APIProtocol.RequestQuery', null, global);
 goog.exportSymbol('proto.SC2APIProtocol.RequestQueryAvailableAbilities', null, global);
 goog.exportSymbol('proto.SC2APIProtocol.RequestQueryBuildingPlacement', null, global);

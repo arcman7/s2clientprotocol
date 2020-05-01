@@ -1,6 +1,6 @@
 {
   "name": "s2clientprotocol",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An NPM/Javascript implementation of the python s2clientprotocol package.",
   "main": "dist/s2clientprotocol.umd.js",
   "module": "dist/s2clientprotocol.esm.js",
@@ -41,5 +41,9 @@
     "rollup": "^2.7.5",
     "rollup-plugin-buble": "^0.19.8",
     "rollup-plugin-commonjs": "^10.1.0"
+  },
+  "dependencies": {
+    "google-protobuf": "^3.11.4",
+    "rollup-plugin-copy": "^3.3.0"
   }
 }
