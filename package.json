@@ -1,6 +1,6 @@
 {
   "name": "s2clientprotocol",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An NPM/Javascript implementation of the python s2clientprotocol package.",
   "main": "dist/s2clientprotocol.umd.js",
   "module": "dist/s2clientprotocol.esm.js",
@@ -37,13 +37,11 @@
     "url": "https://github.com/arcman7/s2clientprotocol/issues"
   },
   "homepage": "https://github.com/arcman7/s2clientprotocol#readme",
-  "devDependencies": {
-    "rollup": "^2.7.5",
-    "rollup-plugin-buble": "^0.19.8",
-    "rollup-plugin-commonjs": "^10.1.0"
-  },
   "dependencies": {
     "google-protobuf": "^3.11.4",
+    "rollup": "^2.7.5",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-copy": "^3.3.0"
   }
 }

@@ -4,18 +4,6 @@ import copy from 'rollup-plugin-copy'
 
 export default {
   input: 'src/index.js',
-  // input: [
-  //   'src/index.js',
-  //   'src/common_pb.js',
-  //   'src/data_pb.js',
-  //   'src/debug_pb.js',
-  //   'src/error_pb.js',
-  //   'src/query_pb.js',
-  //   'src/raw_pb.js',
-  //   'src/sc2api_pb.js',
-  //   'src/spatial_pb.js',
-  //   'src/ui_pb.js',
-  // ],
   output: {
     name: 's2clientprotocol',
     exports: 'named',
@@ -25,7 +13,6 @@ export default {
     commonjs(),
     copy({
       targets: [
-        // { src: 'src/index.js', dest: 'dist' },
         { src: 'src/common_pb.js', dest: 'dist' },
         { src: 'src/data_pb.js', dest: 'dist' },
         { src: 'src/debug_pb.js', dest: 'dist' },
@@ -38,10 +25,5 @@ export default {
         { src: 'src/ui_pb.js', dest: 'dist' },
       ]
     })
-    // resolve({
-    //   customResolveOptions: {
-    //     moduleDirectory: 'src',
-    //   }
-    // })
   ],
 };
