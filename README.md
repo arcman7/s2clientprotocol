@@ -1,4 +1,4 @@
-# sc2clientprotocol
+# s2clientprotocol
 NPM/Javascript implementation of the python sc2clientprotocol package used in the deepmind/pysc2 project.
 
 For more information see [this repository](https://github.com/Blizzard/s2client-proto)'s [documentation](https://github.com/Blizzard/s2client-proto/blob/master/docs/protocol.md)
