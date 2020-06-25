@@ -15,3 +15,5 @@ This repository serves as the source code and homepage of the [sc2clientprotocol
 2. run the command:
   `npm run build-proto`
   - the generated files will be located in the build/gen directory
+
+For other feeback not strictly related to bugs or feature requests you can leave a comment [here](https://arcman7.github.io/en/notes/).
